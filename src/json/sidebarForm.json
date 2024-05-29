@@ -1,0 +1,80 @@
+{
+  "initial": [
+    {
+      "label": "initial_investment",
+      "type": "number",
+      "reference": "price"
+    },
+    {
+      "label": "interest",
+      "children": [
+        {
+          "label": "rate",
+          "type": "number",
+          "reference": "percentage"
+        },
+        {
+          "label": "interest_period",
+          "type": "text",
+          "reference": "period",
+          "children": [
+            {
+              "label": "daily"
+            },
+            {
+              "label": "weekly"
+            },
+            {
+              "label": "monthly"
+            },
+            {
+              "label": "yearly"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "label": "years",
+          "type": "number",
+          "reference": "duration",
+          "value": 5
+        },
+        {
+          "label": "months",
+          "type": "number",
+          "reference": "duration",
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "additional": {
+    "label": "Additional contributions",
+    "children": [
+      {
+        "label": "none",
+        "children": [],
+        "isSelected": true
+      },
+      {
+        "label": "deposits",
+        "children": [{}],
+        "isSelected": false
+      },
+      {
+        "label": "withdrawals",
+        "children": [],
+        "isSelected": false
+      },
+      {
+        "label": "both",
+        "children": [],
+        "isSelected": false
+      }
+    ],
+    "isOptional": true
+  }
+}
