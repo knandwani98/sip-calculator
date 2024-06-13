@@ -60,6 +60,6 @@
 
 @layer utilities {
   .heading {
-    @apply font-black text-2xl sm:text-3xl md:5xl;
+    @apply font-black text-2xl sm:text-3xl md:text-5xl;
   }
 }
